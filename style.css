@@ -1,3 +1,10 @@
+.board {
+  max-width: 800px;
+  max-height: 800px;
+  margin: auto;
+  background-color: lightblue;
+
+}
 
 .card {
   background-color: black;
@@ -5,8 +12,22 @@
   height: 100px;
   margin: 5px auto;
   padding: auto;
-  text-align: center;
 }
 .card:hover {
-  background-color: red;
+  background-color: maroon;
+}
+.front {
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  font-size: 80px;
+  font-family: Arial;
+}
+
+h1{
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
 }
