@@ -1,9 +1,12 @@
 
 .card {
-  background-color: red;
+  background-color: black;
   width: 100px;
   height: 100px;
   margin: 5px auto;
-  text-align: center;
   padding: auto;
+  text-align: center;
+}
+.card:hover {
+  background-color: red;
 }
