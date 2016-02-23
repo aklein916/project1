@@ -8,8 +8,13 @@ var card = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G'
 var guesses = 0;
 var cardPairs = []; //store memory of pairs//
 
-var shuffleCards =
-document.getElementsByClassName('card').addEventListener("click", turnCard)
-  function turnCard(){
-
+Array.prototype.shuffle = function() {
+  var i = this.length, j, temp;
+  while ( --i > 0) {
+     j = Math.floor( Math.random() * ( i + 1 ) );
+     temp = this[j];
+     this[j] = this[i];
+     this[i] = temp;
   }
+  return this;
+}
