@@ -15,6 +15,7 @@ body{
   width: 180px;
   height: 180px;
   margin: 5px;
+  border-radius: 7px;
   float: left;
   text-align: center;
   line-height: 100px;

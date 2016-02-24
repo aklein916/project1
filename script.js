@@ -38,3 +38,9 @@ for(var i= 0; i<clickCard.length; i++){
     }
   })
 }
+
+function flipTile(card) {
+  var back = document.getElementsByClass("back");
+  back.style.backgroundColor = "transparent";
+  card.removeAttribute("disabled");
+}
