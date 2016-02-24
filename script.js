@@ -5,11 +5,17 @@
 //when all pairs have been correctly identified the player gets a message that they won. The message tells them how many guesses it took them to identify the ten pairs correctly.  each time the game is played the cards should be shuffled into a random order
 
 var card = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
-var guesses = 0;
 var pairs = []; //store memory of matches//
-var cardPickOne;
-var cardPickTwo;
 
+cardPickOne = null
+cardPickTwo = null
+function compareCards() {
+  if(cardPickOne === cardPickTwo){
+    alert("You have a match!");
+  } else{
+    alert("Try again!");
+  }
+}
   card.sort(function() {
   if (Math.random() > 0.5) return 1;
     else return -1;
@@ -18,8 +24,17 @@ var cardPickTwo;
 var clickCard = document.querySelectorAll(".card");
   console.log(clickCard);
 
-for (var i= 0; i<clickCard.length; i++) {
+for(var i= 0; i<clickCard.length; i++){
   clickCard[i].addEventListener("click", function(){
-    console.log(this.getAttribute("name"));
+    if (cardPickOne == null){
+      cardPickOne=this.getAttribute("name");
+      console.log("Your first pick is " + cardPickOne);
+    } else {
+      cardPickTwo=this.getAttribute("name");
+      console.log("Your second pick was " + cardPickTwo);
+    compareCards();
+     cardPickOne=null;
+     cardPickTwo=null;
+    }
   })
 }
