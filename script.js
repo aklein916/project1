@@ -13,7 +13,8 @@ var numberOfMatches;
 
   card.sort(function() {
   if (Math.random() > 0.5) return 1;
-    else return -1;
+    else { return -1;
+    }
 });
 
 var clickCard = document.querySelectorAll(".card");
@@ -41,4 +42,4 @@ for(var i= 0; i<clickCard.length; i++){
      cardPickTwo=null;
     }
   })
-}\
+}
