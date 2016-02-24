@@ -6,25 +6,20 @@
 
 var card = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
 var guesses = 0;
-var cardPairs = []; //store memory of pairs//
+var pairs = []; //store memory of matches//
+var cardPickOne;
+var cardPickTwo;
 
-Array.prototype.shuffle = function() {
-  var i = this.length, j, temp;
-  while ( --i > 0) {
-     j = Math.floor( Math.random() * ( i + 1 ) );
-     temp = this[j];
-     this[j] = this[i];
-     this[i] = temp;
-  }
-  return this;
+  card.sort(function() {
+  if (Math.random() > 0.5) return 1;
+    else return -1;
+});
+
+var clickCard = document.querySelectorAll(".card");
+  console.log(clickCard);
+
+for (var i= 0; i<clickCard.length; i++) {
+  clickCard[i].addEventListener("click", function(){
+    console.log(this.getAttribute("name"));
+  })
 }
-function shuffleBoard() {
-  guesses = 0;
-  var newDeck = '';
-  card.shuffle();
-  for(var i=0; i<card.length; i+=1) {
-    newDeck += '<div class="card '+i+' "onclick="memoryFLipTile(this,\''+card[i]+'\')"> </div>';
-  }
-  document.getElementsByClassName('board').innerhtml = newDeck;
-}
-window.addEventListener(shuffleBoard());
