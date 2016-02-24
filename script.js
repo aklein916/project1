@@ -6,16 +6,10 @@
 
 var card = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
 var pairs = []; //store memory of matches//
-
+var lastThingClicked;
 cardPickOne = null
 cardPickTwo = null
-function compareCards() {
-  if(cardPickOne === cardPickTwo){
-    alert("You have a match!");
-  } else{
-    alert("Try again!");
-  }
-}
+
   card.sort(function() {
   if (Math.random() > 0.5) return 1;
     else return -1;
@@ -29,18 +23,21 @@ for(var i= 0; i<clickCard.length; i++){
     if (cardPickOne == null){
       cardPickOne=this.getAttribute("name");
       console.log("Your first pick is " + cardPickOne);
+      this.classList.add("front");
+      lastThingClicked = this
     } else {
       cardPickTwo=this.getAttribute("name");
       console.log("Your second pick was " + cardPickTwo);
-    compareCards();
+      this.classList.add("front");
+        if(cardPickOne === cardPickTwo){
+          alert("You have a match!");
+        } else{
+          alert("Try again!");
+          this.classList.remove("front");
+          lastThingClicked.classList.remove("front");
+        }
      cardPickOne=null;
      cardPickTwo=null;
     }
   })
-}
-
-function flipTile(card) {
-  var back = document.getElementsByClass("back");
-  back.style.backgroundColor = "transparent";
-  card.removeAttribute("disabled");
 }
