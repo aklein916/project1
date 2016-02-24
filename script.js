@@ -18,3 +18,13 @@ Array.prototype.shuffle = function() {
   }
   return this;
 }
+function shuffleBoard() {
+  guesses = 0;
+  var newDeck = '';
+  card.shuffle();
+  for(var i=0; i<card.length; i+=1) {
+    newDeck += '<div class="card '+i+' "onclick="memoryFLipTile(this,\''+card[i]+'\')"> </div>';
+  }
+  document.getElementsByClassName('board').innerhtml = newDeck;
+}
+window.addEventListener(shuffleBoard());
