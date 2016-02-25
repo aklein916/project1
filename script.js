@@ -41,5 +41,12 @@ for(var i= 0; i<clickCard.length; i++){
      cardPickOne=null;
      cardPickTwo=null;
     }
-  })
+  });
 }
+function countGuesses(){
+  var numberOfMatches = document.querySelectorAll(".front");
+  if (numberOfMatches.length == card.length) {
+    alert("You have finished the game!");
+  };
+}
+countGuesses();
