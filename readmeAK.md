@@ -13,6 +13,7 @@ I was comfortable using the gh-pages and branches to create the project.
 
 ##UNSOLVED PROBLEMS##
 I would have loved to have more time to work on the project, as I feel like until Wednesday I was not really understanding the javascript portion of my game. As a result, while I can get the cards to shuffle in the console, visually they don't randomize or shuffle when the game is loaded. Additionally, I have been working on what happens when the game ends, but have not been able to successfully have that happen (yet). Also, I did not have time to change the letters to images, which I believe would have made the game more interesting to the user and a little more complex. Finally, I spent a lot of time using online resources and looking at examples of code. While this is certainly useful, I should have asked my peers and instructors for support a little sooner, as it related to my project, rather than spending hours trying to apply an online example to my own project.
+--html validator said I could not have the attribute "name" in the div tag. It still loads and the game runs, so I decided not to go back and try to fix that with only an hour or so left to work on the project. I was worried it would mess up my code and set me back. 
 ##USER STORIES##
 -As a user I can click and find the matches and am alerted when the matches occur so that I can play the game.
 -As an adult I would like the game to be more complex, with various have levels of difficulty to keep me interested.
