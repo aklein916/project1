@@ -1,6 +1,6 @@
 # Presentations
 
-Presentations will start on Wednesday at 1:30pm. We expect everyone to attend every session
+Presentations will start on Thursday at 2:00pm. We expect everyone to attend every session
 and will provide 15 minute breaks between each session.
 
 This means **no working on your code** while others are presenting. This is your chance
@@ -15,11 +15,47 @@ a given time, and other students will walk around asking questions like:
 - How did you plan your project?
 - What did you learn?
 
-## Schedule
+## Schedule for Presentations
+Groups were assigned randomly, to ensure that everyone has the opportunity to see presentations of a range of different game types, by members of every squad.
 
-| Group                       | Time        |
-|-----------------------------|-------------|
-| BlackJack                   | 1:30 - 2:15 |
-| Flash Cards & Concentration | 2:30 - 3:15 |
-| Trivia                      | 3:30 - 4:15 |
-| Retro (by Squad)            | 4:30 - 5:00 |
+| Time        | Group  |
+|:-----------:|:------:|
+| 2:00 - 2:40 | 1      |
+| 2:50 - 3:30 | 2      |
+| 3:40 - 4:20 | 3      |
+
+### Group 1 (2:00 - 2:40)
+```text
+CLASSROOM 4:
+
+- Jesse
+
+CLASSROOM 5:
+
+- Joe
+- Adrian
+
+```
+### Group 2 (2:50 - 3:30)
+```text
+CLASSROOM 4:
+
+- Becky
+
+CLASSROOM 5:
+
+- Nick
+
+```
+### Group 3 (3:40 - 4:20)
+```text
+CLASSROOM 4:
+
+- Robin
+
+
+CLASSROOM 5:
+
+- Matt
+
+```

@@ -15,6 +15,10 @@ This is an opportunity to **be creative**, and work through some **tough program
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping as you go. Show us what you've got!
 
+### Asking For Help
+
+[Please read!](https://github.com/ga-dc/wdi8/blob/master/asking-for-help.md)
+
 ---
 
 ### Technical Requirements
@@ -38,13 +42,16 @@ Your app must:
   * A **link to your hosted project** in the URL section of your Github repo
   * **A ``readme.md`` file**, including
     * Explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
-    * At least 5 [user stories](https://github.com/ga-dc/curriculum/tree/master/02-intermediate-front-end/process-stories-wireframes).
+    * At least 5 [user stories](https://github.com/ga-wdi-lessons/agile/blob/249a9641e21dadbb0628ab151ac8107042fb6d60/readme.md#user-stories-how-do-we-figure-out-our-mvp).
+
+The URL section of your Github repo:
+![URL section](http://i.imgur.com/QQ7RsfR.gif)
 
 ---
 
 ### Deploying via GitHub Pages.
 
-**DO NOT** follow the instructions provided by GitHub for creating your Project Pages. Why not? They expect `gh_pages` to be a separate informational site about the project contained in the repo. So, what we want, is to use the `gh_pages` functionality to actually host our application.
+**DO NOT** follow the instructions provided by GitHub for creating your Project Pages. Why not? They expect `gh_pages` to be a separate informational site about the project contained in the repo. What we want is to use the `gh_pages` functionality to actually host our application.
 
 Instead, try these steps:
 
@@ -69,6 +76,8 @@ git push origin gh-pages
 ---
 
 ### Suggested Ways to Get Started
+
+[Create your bronze, silver, and gold plan.](https://github.com/ga-wdi-lessons/bronze-silver-gold)
 
 * **Break the project down into different components** (data, presentation, views, style, DOM manipulation) and brainstorm each component individually. Use whiteboards!
 * **Use your Development Tools** (console.log, inspector, alert statements, etc) to debug and solve problems
@@ -149,10 +158,9 @@ This will serve as a helpful overall gauge of whether you met the project goals,
 
 Day | Time | Event | who
 ----- | ------------ | ----- | -----
-Monday/Tuesday | TBA | One-on-ones | individual
-Tuesday | 1:30 - 3:00 | Outcomes | Classrooms 5 & 1
-Tuesday | 3:30 - 5:00 | Outcomes | Classroom 4
-Wednesday | 2:00 - 4:30 | Project 1 Presentations | everyone
+Tuesday | 10:00 - 12:30 | Outcomes | everyone
+Thursday | 12:00 | Code freeze/Projects due | everyone
+Thursday | 2:30 - 5:00 | Project 1 Presentations | everyone
 
 ### Presentations
 
@@ -161,8 +169,12 @@ All presentations will be science fair style. There will be 3 separate groups. D
 #### Schedule for Presentations
 You'll be assigned a group number on the day of the presentation.
 
-time|group
------ |-----
-2:00 - 2:45 | 1
-2:50 - 3:35| 2
-3:45 - 4:30| 3
+| Time        | Group  |
+|:-----------:|:------:|
+| 2:00 - 2:40 | 1      |
+| 2:50 - 3:30 | 2      |
+| 3:40 - 4:20 | 3      |
+
+#### Retro
+
+4:30 - 5:15 - [Squad Retro](retro.md)
