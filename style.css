@@ -1,3 +1,5 @@
+/* AM: Do you need to repeat `background-color: lightblue` in `body` and `.board`? */
+
 body{
   background-color: lightblue;
 }

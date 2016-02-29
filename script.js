@@ -8,10 +8,13 @@
 var card = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
 var pairs; //store memory of matches//
 var lastThingClicked;
+// AM: Even though it doesn't matter whether you use `var` or not in the global scope, good to be consistent (I would opt for using `var`).
 cardPickOne= null;
 cardPickTwo = null
 var numberOfMatches;
 //randomize the carts--can see it in console but doesn't shuffle the cards//
+// AM: So the below 5 lines of code does shuffle the array you call it on. You then need to append the contents of the shuffled array to the DOM yourself.
+// AM: This would entail not hardcoding the letters into `index.html`.
   card.sort(function() {
   if (Math.random() > 0.5) return 1;
     else { return -1;
@@ -32,6 +35,9 @@ for(var i= 0; i<clickCard.length; i++){
       cardPickTwo=this.getAttribute("name");
       console.log("Your second pick was " + cardPickTwo);
       this.classList.add("front");
+      // AM: As your application currently stands, you can click on the same square twice to get a "match".
+      // AM: You'll need to add another condition or modify the existing one to check for uniqueness.
+      // AM: Maybe you can check on the tile's current styling?
         if(cardPickOne === cardPickTwo){
           alert("You have a match!");
         } else{
@@ -52,3 +58,5 @@ function countGuesses(){
   };
 }
 countGuesses();
+
+// AM: Kudos on keeping your JS file to under 60 lines of code!
