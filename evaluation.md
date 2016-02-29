@@ -22,6 +22,8 @@ If you want to step up your readme game, familiarize yourself with Markdown form
 
 **Meets Expectations:** Good job keeping your code concise and readable. Your code comments were helpful in explaining blocks of code whose purpose wasn't immediately apparent.
 
+Also, for future projects, start by creating your own project repo -- not forking the GA one.
+
 Make sure to take a look at the inline code comments I made in this [pull request](https://github.com/aklein916/project1/pull/1).
 
 ## In Response To Your Questions...
