@@ -1,0 +1,43 @@
+/* AM: Do you need to repeat `background-color: lightblue` in `body` and `.board`? */
+
+body{
+  background-color: lightblue;
+}
+
+.board {
+  max-width: 820px;
+  max-height: 820px;
+  margin: auto;
+  background-color: lightblue;
+  border: 5px;
+  border-color: lightblue;
+}
+
+.card {
+  width: 180px;
+  height: 180px;
+  margin: 5px;
+  border-radius: 7px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  font-size: 50px;
+  background-color: black;
+}
+
+.front {
+  background-color: maroon;
+  /*position: absolute;*/
+  width: 180px;
+  height: 180px;
+  border-radius: 7px;
+}
+
+h1{
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  line-height: 1.2em
+}
