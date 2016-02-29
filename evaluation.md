@@ -14,7 +14,7 @@ If you want to step up your readme game, familiarize yourself with Markdown form
 
 > Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?  
 
-**Meets Expectations:** Good job meeting the technical requirements for this project. The next step for you here is to make your concentration game more dynamic (i.e., not hardcode everything into `index.html`). This will require defining some additional functionality in your Javascript -- take a look at my inline code comments for more on this (and other refactoring opportunities).
+**Meets Expectations:** Good job meeting the technical requirements for this project. The next step for you here is to make your concentration game more dynamic (i.e., not hardcode everything into `index.html`). This will require defining some additional functionality in your Javascript -- take a look at my [inline code comments](https://github.com/aklein916/project1/pull/1) for more on this (and other refactoring opportunities).
 
 ## Code Quality
 
@@ -22,7 +22,7 @@ If you want to step up your readme game, familiarize yourself with Markdown form
 
 **Meets Expectations:** Good job keeping your code concise and readable. Your code comments were helpful in explaining blocks of code whose purpose wasn't immediately apparent.
 
-Make sure to take a look at the inline code comments I made in this [pull request]().
+Make sure to take a look at the inline code comments I made in this [pull request](https://github.com/aklein916/project1/pull/1).
 
 ## In Response To Your Questions...
 
@@ -30,7 +30,7 @@ These are my responses to the questions you left in your project submission. Let
 
 #### Shuffling Cards on the Screen
 
-Mentioned this in my inline code comments, but once you have the cards shuffled you then need to append them to the DOM. This will require iterating through the shuffled array (which you already have in your code) and creating/appending card `<div>`s using the shuffled letters (you learned about this stuff in the DOM manipulation lesson). Let me know if you would like some help on this.
+Mentioned this in my [inline code comments](https://github.com/aklein916/project1/pull/1), but once you have the cards shuffled you then need to append them to the DOM. This will require iterating through the shuffled array (which you already have in your code) and creating/appending card `<div>`s using the shuffled letters (you learned about this stuff in the DOM manipulation lesson). Let me know if you would like some help on this.
 
 #### Ending The Game
 
