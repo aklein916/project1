@@ -12,14 +12,14 @@ cardPickOne= null;
 cardPickTwo = null
 var numberOfMatches;
 //randomize the carts--can see it in console but doesn't shuffle the cards//
-  card.sort(function() {
+card.sort(function() {
   if (Math.random() > 0.5) return 1;
-    else { return -1;
-    }
+  else { return -1;
+  }
 });
 //click on the cards//
 var clickCard = document.querySelectorAll(".card");
-  console.log(clickCard);
+console.log(clickCard);
 //check for a match between the two picks by adding a class ".front" when the card is clicked. if the two cards are the same, there is a match. if not the cards flip back over//
 for(var i= 0; i<clickCard.length; i++){
   clickCard[i].addEventListener("click", function(){
@@ -32,15 +32,15 @@ for(var i= 0; i<clickCard.length; i++){
       cardPickTwo=this.getAttribute("name");
       console.log("Your second pick was " + cardPickTwo);
       this.classList.add("front");
-        if(cardPickOne === cardPickTwo){
-          alert("You have a match!");
-        } else{
-          alert("Try again!");
-          this.classList.remove("front");
-          lastThingClicked.classList.remove("front");
-        }
-     cardPickOne=null;
-     cardPickTwo=null;
+      if(cardPickOne === cardPickTwo){
+        alert("You have a match!");
+      } else{
+        alert("Try again!");
+        this.classList.remove("front");
+        lastThingClicked.classList.remove("front");
+      }
+      cardPickOne=null;
+      cardPickTwo=null;
     }
   });
 }
