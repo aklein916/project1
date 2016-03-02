@@ -5,12 +5,10 @@
 //when all pairs have been correctly identified the player gets a message that they won. The message tells them how many guesses it took them to identify the ten pairs correctly.  each time the game is played the cards should be shuffled into a random order
 
 //define the variables// //**lots of variables outside of functions.**//
-var card = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
-var pairs; //store memory of matches//  /*use jQuery for letters and not have them in the html that way they will move and randomize and not show through*/
-var lastThingClicked;
-cardPickOne= null;
-cardPickTwo = null
-var numberOfMatches;
+
+var card=['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J'];
+ //store memory of matches//  /*use jQuery for letters and not have them in the html that way they will move and randomize and not show through*/
+
 //randomize the carts--can see it in console but doesn't shuffle the cards//
 card.sort(function() {
   if (Math.random() > 0.5) return 1;
@@ -21,8 +19,11 @@ card.sort(function() {
 var clickCard = document.querySelectorAll(".card"); //**add jQuery here//
 console.log(clickCard);
 //check for a match between the two picks by adding a class ".front" when the card is clicked. if the two cards are the same, there is a match. if not the cards flip back over//
-for(var i= 0; i<clickCard.length; i++){      /*use .foreach instead of loop*/
-  clickCard[i].addEventListener("click", function(){        /*can use jquery*/
+for(var i= 0; i<clickCard.length; i++){
+  var cardPickOne= null;
+  var cardPickTwo= null;
+  var lastThingClicked;   /*use .foreach instead of loop*/
+  clickCard[i].addEventListener("click", function(){       /*can use jquery*/
     if (cardPickOne == null){
       cardPickOne=this.getAttribute("name");
       console.log("Your first pick is " + cardPickOne);
